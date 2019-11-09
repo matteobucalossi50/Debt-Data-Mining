@@ -67,7 +67,7 @@ def remove_outliers(df):
 data = remove_outliers(data.loc['pop':])
 
 # these are checks for me if function worked - delete once we are done
-print(sum(data['pop']> 55000))
+print(sum(data['pop']> 25000))
 
 for name in data.columns:
     if is_numeric_dtype(data[name]):
